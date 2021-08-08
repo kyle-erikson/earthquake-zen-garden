@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./styles/App.css";
 import HeaderBar from "./components/layout/HeaderBar";
 import ProfilePage from "./views/ProfilePage";
+import HomePage from "./views/HomePage";
 
 const App: React.FC<{}> = () => {
   return (
@@ -10,7 +11,7 @@ const App: React.FC<{}> = () => {
       <HeaderBar />
       <Switch>
         <Route exact path="/">
-          {/* <HomePage /> */}
+          <HomePage />
         </Route>
         <Route exact path="/details/:id">
           {/* <DetailPage /> */}

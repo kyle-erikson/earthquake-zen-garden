@@ -1,5 +1,5 @@
 import React from "react";
-import TableItem from "../components/shared/TableItems";
+import TableItem from "../components/shared/TableItem";
 import data from "../data/index.json";
 import { ApplicationData, ProfileData } from "../types";
 
@@ -25,12 +25,12 @@ const ProfilePage = () => {
   return (
     <article className="container">
       <h3>Profile</h3>
-      <div id="profileContent">
+      <div className="pageContent">
         <div>
           <img id="avatar" src={profile.avatarImage} />
         </div>
         <div>
-          <table>
+          <table id="profileTable">
             {Object.keys(profile).map((key) => {
               if (key !== "avatarImage") {
                 return <TableItem title={titleMap[key as keyof TitleMap]} value={profile[key as keyof ProfileData]} />

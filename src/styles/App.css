@@ -26,6 +26,10 @@ h1 {
   color: var(--darker-gray);
 }
 
+h3 {
+  color: var(--darkest-gray);
+}
+
 #logo {
   height: 50px;
 }
@@ -49,14 +53,30 @@ a:visited {
   margin-right: 15px;
 }
 
-#profileContent {
+.pageContent {
   display: flex;
 }
 
 td {
-  padding-right: 15px;
   color: var(--darker-gray);
   font-weight: bold;
+}
+
+#profileTable td {
+  padding-right: 15px;
+}
+
+#earthquakeListTable {
+  border-spacing: 10px 0px;
+}
+
+#earthquakeListTable td:nth-child(2) {
+  text-align: center;
+}
+
+th {
+  color: var(--darkest-gray);
+  text-align: center;
 }
 
 .title {
