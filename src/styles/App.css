@@ -85,6 +85,10 @@ th {
   text-align: center;
 }
 
+#detailsTable td:first-child {
+  width: 7em;
+}
+
 .title {
   color: var(--darkest-gray);
 }

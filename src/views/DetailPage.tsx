@@ -53,7 +53,7 @@ const ProfilePage = ({
       <div id="detailsContainer">
         <h3>{earthquakeDetails.title}</h3>
         <div className="pageContent">
-          <table id="profileTable">
+          <table id="detailsTable">
             {Object.keys(titleMap).map((key) => {
               return (
                 <TableItem
