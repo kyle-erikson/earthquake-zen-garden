@@ -3,12 +3,13 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: ["./src/index.tsx"],
+    app: ["./src"],
     vendor: ["react", "react-dom"],
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "js/[name].bundle.js",
+    filename: "[name].js",
+    publicPath: '/'
   },
   devtool: "source-map",
   resolve: {
@@ -26,10 +27,13 @@ module.exports = {
       },
     ],
   },
-
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
+      filename: "./index.html"
     }),
   ],
 };

@@ -37,3 +37,28 @@ a {
 a:visited {
   color: var(--purple);
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#avatar {
+  height: 200px;
+  margin-right: 15px;
+}
+
+#profileContent {
+  display: flex;
+}
+
+td {
+  padding-right: 15px;
+  color: var(--darker-gray);
+  font-weight: bold;
+}
+
+.title {
+  color: var(--darkest-gray);
+}
