@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "../../data/index.json";
-import { ApplicationData, SiteData } from "../../types";
+import { ApplicationData } from "../../types";
 
 const {site, profile}  = data as ApplicationData;
 

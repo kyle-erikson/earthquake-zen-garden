@@ -4,24 +4,16 @@ import "./styles/App.css";
 import HeaderBar from "./components/layout/HeaderBar";
 import ProfilePage from "./views/ProfilePage";
 import HomePage from "./views/HomePage";
+import DetailPage from "./views/DetailPage";
 
-const App: React.FC<{}> = () => {
+const App = () => {
   return (
     <Router>
       <HeaderBar />
       <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route exact path="/details/:id">
-          {/* <DetailPage /> */}
-        </Route>
-        <Route exact path="/profile">
-          <ProfilePage />
-        </Route>
-        <Route exact path="/hello">
-          <h1>Hello</h1>
-        </Route>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/details/:id" component={DetailPage} />
+        <Route exact path="/profile" component={ProfilePage} />
       </Switch>
     </Router>
   );

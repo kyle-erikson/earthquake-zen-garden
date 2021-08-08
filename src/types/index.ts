@@ -75,3 +75,8 @@ export interface SiteData {
   heroImage: string;
   logoImage: string;
 }
+
+export interface SortConfig {
+  key: string;
+  direction: string;
+}

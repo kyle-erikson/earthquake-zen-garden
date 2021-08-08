@@ -1,5 +1,5 @@
 import React from "react";
-import TableItem from "../components/shared/TableItem";
+import TableItem from "../components/shared/DoubleColumnTableItem";
 import data from "../data/index.json";
 import { ApplicationData, ProfileData } from "../types";
 
